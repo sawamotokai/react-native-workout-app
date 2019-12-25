@@ -9,7 +9,13 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importStar(require("react"));
 var react_native_1 = require("react-native");
-var NewAppScreen_1 = require("react-native/Libraries/NewAppScreen");
+// import {
+// 	Header,
+// 	LearnMoreLinks,
+// 	Colors,
+// 	DebugInstructions,
+// 	ReloadInstructions
+// } from 'react-native/Libraries/NewAppScreen';
 var App = function () {
     var _a = react_1.useState(0), count = _a[0], setCount = _a[1];
     return (react_1.default.createElement(react_native_1.View, { style: styles.sectionContainer },
@@ -21,14 +27,14 @@ var App = function () {
 };
 var styles = react_native_1.StyleSheet.create({
     scrollView: {
-        backgroundColor: NewAppScreen_1.Colors.lighter
+    // backgroundColor: Colors.lighter
     },
     engine: {
         position: 'absolute',
         right: 0
     },
     body: {
-        backgroundColor: NewAppScreen_1.Colors.white
+    // backgroundColor: Colors.white
     },
     sectionContainer: {
         marginTop: 32,
@@ -36,20 +42,20 @@ var styles = react_native_1.StyleSheet.create({
     },
     sectionTitle: {
         fontSize: 24,
-        fontWeight: '600',
-        color: NewAppScreen_1.Colors.black
+        fontWeight: '600'
+        // color: Colors.black
     },
     sectionDescription: {
         marginTop: 8,
         fontSize: 18,
-        fontWeight: '400',
-        color: NewAppScreen_1.Colors.dark
+        fontWeight: '400'
+        // color: Colors.dark
     },
     highlight: {
         fontWeight: '700'
     },
     footer: {
-        color: NewAppScreen_1.Colors.dark,
+        // color: Colors.dark,
         fontSize: 12,
         fontWeight: '600',
         padding: 4,
