@@ -9,7 +9,5 @@
 	},
 	"author": "Kai Sawamoto",
 	"license": "ISC",
-	"workspaces": [
-		"packages/*"
-	]
+	"workspaces": [ "packages/*" ]
 }

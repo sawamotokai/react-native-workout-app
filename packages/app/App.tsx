@@ -1,14 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
-
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import { SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar, Button } from 'react-native';
 
 // import {
@@ -19,18 +9,16 @@ import { SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar, Button } f
 // 	ReloadInstructions
 // } from 'react-native/Libraries/NewAppScreen';
 
-declare var global: { HermesInternal: null | {} };
-
 const App = () => {
-	const [ count, setcount ] = useState(0);
+	const [ count, setCount ] = useState(0);
 	return (
 		<View style={styles.sectionContainer}>
-			<Text style={styles.sectionTitle}>Hello</Text>
-			<Text style={styles.sectionDescription}>{count}</Text>
+			<Text>Welcome</Text>
+			<Text>{count}</Text>
 			<Button
 				title="increment"
 				onPress={() => {
-					setcount(count + 1);
+					setCount(count + 1);
 				}}
 			/>
 		</View>
